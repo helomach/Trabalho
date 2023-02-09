@@ -1,0 +1,40 @@
+/* Classe do body para adicionar uma cor de fundo */
+.body-class {
+    font-family: 'Roboto', sans-serif;
+    /* margin: 10px; */
+    background-color: rgb(195, 104, 145);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Mudando o estilo da fonte*/
+h1 { 
+    border-bottom-style: inset;
+    border-bottom-color: rgb(186, 33, 125);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+ }
+.tarefa-selecionada { 
+    color: red; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tarefa-normal {
+    color: rgb(205, 39, 172); 
+    }
+
+/* Colocando cor de fundo */
+div {
+   background-color: rgb(195, 104, 145);
+}
+
+/* Configurações da imagem */
+.col-sm-4 img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
