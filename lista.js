@@ -15,20 +15,23 @@ frm.addEventListener("submit", (e) => {
   frm.inTarefa.focus()                          // joga o cursor neste campo
 })
 
+// Seleciona as tarefas
 frm.btSelecionar.addEventListener("click", () => { 
   const tarefas = document.querySelectorAll("h5")  
 
+  // Verifica se possuem tarefas a serem selecionadas
   if (tarefas.length == 0) {
     alert("Não há tarefas para selecionar")       
     return                                        
   }
 
+  // Variável auxiliar
   let aux = -1                   
 
- 
+ // Verifica se a tarefa está selecionada, e caso estiver, deseleciona a tarefa
   for (let i = 0; i < tarefas.length; i++) {
     
-    if (tarefas[i].className == "tarefa-selecionada") {
+    if (tarefas[i].className == "tarefa-selecionada") { // Seleciona a tarefa
       tarefas[i].className = "tarefa-normal"      
       aux = i                                     
       break                                       
@@ -43,6 +46,7 @@ frm.btSelecionar.addEventListener("click", () => {
   tarefas[aux + 1].className = "tarefa-selecionada" 
 })
 
+// Função para retirar a tarefa seleciona
 frm.btRetirar.addEventListener("click", () => { 
   const tarefas = document.querySelectorAll("h5") 
 
@@ -66,9 +70,11 @@ frm.btRetirar.addEventListener("click", () => {
   }
 })
 
+//Função para gravar a lista de tarefas
 frm.btGravar.addEventListener("click", () => { 
   const tarefas = document.querySelectorAll("h5")  
 
+  //Verifica se há tarefas para serem salvas
   if (tarefas.length == 0) {
     alert("Não há tarefas para serem salvas")      
     return                                         
